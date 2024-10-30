@@ -1,0 +1,30 @@
+# Node.js and npm
+node_modules/
+npm-debug.log
+
+# MongoDB
+data/
+
+# Express
+config.env
+
+# React
+build/
+public/dist/
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# General
+.DS_Store
+.eslintcache
+package-lock.json
+
+# OS files
+Thumbs.db
+ehthumbs.db
+Desktop.ini

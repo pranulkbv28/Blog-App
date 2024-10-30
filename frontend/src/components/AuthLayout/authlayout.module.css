@@ -1,0 +1,96 @@
+.body {
+  background-image: url("../../assets/images/authpagebg.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.body > div:first-child {
+  /* width: 100%; */
+  padding: 30px 30px 0 30px;
+}
+
+.header {
+  display: flex;
+}
+
+.hyperlinksContainer {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 30px; */
+}
+
+.hyperlink {
+  font-size: x-large;
+}
+
+.hyperlink > a {
+  border-bottom: 1px solid transparent;
+  padding: 8px;
+  border-radius: 0px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+
+.hyperlink > a:hover {
+  /* text-decoration: underline; */
+  border-bottom: 5px solid rgba(255, 255, 255, 0.523);
+  background-color: rgba(211, 211, 211, 0.399);
+  border-radius: 12px;
+}
+
+.innerContainer {
+  width: 40%;
+  /* height: 100%; */
+  /* padding: 20px; */
+  background-color: rgba(245, 245, 220, 0.386);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .taglinesContainer {
+  
+} */
+
+.taglinesContainer > h1 {
+  position: relative;
+  color: black;
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.taglinesContainer > h1::after {
+  content: ".";
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+}
+
+.taglinesContainer > h1:nth-child(1) {
+  left: -5%;
+}
+
+.taglinesContainer > h1:nth-child(2) {
+  left: 10%;
+}
+
+.taglinesContainer > h1:nth-child(2)::after {
+  content: ".";
+  position: absolute;
+  bottom: 0;
+  right: -10%;
+}
+
+.taglinesContainer > h1:nth-child(3) {
+  /* color: white; */
+  left: 30%;
+}
