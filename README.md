@@ -7,7 +7,8 @@
 
 ## Prerequisites
 
-- NodeJs and NPM
+- `NodeJs`
+- `NPM`
 
 ## How to Start
 
