@@ -1,7 +1,21 @@
 import { Link } from "react-router-dom";
 import styles from "./signuppage.module.css";
+import { useState } from "react";
+import useSignup from "../../hooks/useSignup";
 
 function SignupPage() {
+  const [inputs, setInputs] = useState({
+    username: "",
+    password: "",
+  });
+
+  const { loading, signup } = useSignup();
+
+  const handleClick = async (event) => {
+    event.preventDefault();
+    await signup(inputs);
+  };
+
   return (
     <div className={`${styles.body}`}>
       <h1 className={`${styles.heading} text-3xl text-center font-semibold`}>
@@ -21,6 +35,10 @@ function SignupPage() {
               name="username"
               id="username"
               placeholder="Enter your username"
+              value={inputs.username}
+              onChange={(e) =>
+                setInputs({ ...inputs, username: e.target.value })
+              }
             />
           </div>
           <div>
@@ -30,6 +48,10 @@ function SignupPage() {
               name="password"
               id="password"
               placeholder="Enter your password"
+              value={inputs.password}
+              onChange={(e) =>
+                setInputs({ ...inputs, password: e.target.value })
+              }
             />
           </div>
         </form>
@@ -41,7 +63,9 @@ function SignupPage() {
             </p>
           </span>
           <span className={`${styles.btnContainer}`}>
-            <button>Sign Up</button>
+            <button onClick={handleClick}>
+              {loading ? "Loading..." : "Sign Up"}
+            </button>
           </span>
         </div>
       </div>

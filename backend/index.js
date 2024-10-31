@@ -4,12 +4,13 @@ import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
 import connectToDb from "./db/index.db.js";
 import userRouter from "./routes/user.routes.js";
+// import testRouter from "./routes/test.routes.js";
 
 dotenv.config({
   path: "./.env",
 });
 
-const PORT = 3000;
+const PORT = 8000;
 
 const corsOptions = {
   origin: "http://localhost:3000",
@@ -25,6 +26,10 @@ app.use(cookieParser());
 app.use(cors(corsOptions));
 
 app.use("/api/v1/user", userRouter);
+// app.use("/api/v1/test", testRouter);
+// app.get("/ping", (req, res) => {
+//   res.status(200).send("pong");
+// });
 
 app.listen(PORT, async () => {
   await connectToDb();
