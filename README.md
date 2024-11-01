@@ -7,8 +7,8 @@
 
 ## Prerequisites
 
-- `NodeJs`
-- `NPM`
+- [`NodeJs`](https://nodejs.org/en/download/)
+- [`NPM`](https://www.npmjs.com/)
 
 ## How to Start
 
