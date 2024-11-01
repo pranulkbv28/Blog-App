@@ -71,8 +71,7 @@ export const loginUser = async (req, res) => {
 
     const user = await User.findOne({ username });
     if (!user) throw new ApiError(400, "User does not exist!!");
-
-    console.log("This is user pwd: ", password);
+    // console.log("This is user pwd: ", password);
 
     const isPasswordValid = await user.isPasswordCorrect(password);
 
