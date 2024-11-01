@@ -35,7 +35,7 @@ npm run dev
 ## Collaborators
 
 - [pranulkbv28](https://github.com/pranulkbv28)
-- [Vaisnavi382](https://github.com/Vaisnavi382) 💖
+- [Vaisnavi382](https://github.com/Vaisnavi382)
 
 ## Routes
 
