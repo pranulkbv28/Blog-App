@@ -2,7 +2,6 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import AuthLayout from "./components/AuthLayout/AuthLayout";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import SignupPage from "./pages/SignupPage/SignupPage";
-// import AppLayout from "./components/AppLayout/AppLayout";
 import Home from "./pages/Home/Home";
 import TestPage2 from "./pages/TestPage2/TestPage2";
 import TestPage1 from "./pages/TestPage1/TestPage1";
