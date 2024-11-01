@@ -3,8 +3,6 @@ import AuthLayout from "./components/AuthLayout/AuthLayout";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import SignupPage from "./pages/SignupPage/SignupPage";
 import Home from "./pages/Home/Home";
-import TestPage2 from "./pages/TestPage2/TestPage2";
-import TestPage1 from "./pages/TestPage1/TestPage1";
 import { useSelector } from "react-redux";
 import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
 
@@ -40,8 +38,6 @@ function App() {
         </Route>
         <Route path="/app" element={<ProtectedRoute />}>
           <Route path="home" element={<Home />} />
-          <Route path="test-page-1" element={<TestPage1 />} />
-          <Route path="test-page-2" element={<TestPage2 />} />
         </Route>
       </Routes>
     </div>
