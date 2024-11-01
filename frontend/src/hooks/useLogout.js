@@ -1,9 +1,12 @@
 import axios from "axios";
 import { useState } from "react";
 import toast from "react-hot-toast";
+import { useDispatch } from "react-redux";
+import { setUser } from "../features/userSlice/userSlice";
 
 const useLogout = () => {
   const [loading, setLoading] = useState();
+  const dispatch = useDispatch();
 
   const logout = async () => {
     setLoading(true);
@@ -26,6 +29,10 @@ const useLogout = () => {
       const data = await response.data;
 
       toast.success(data.message);
+      localStorage.removeItem("accessToken");
+      localStorage.removeItem("user");
+      dispatch(setUser(null));
+      window.location.reload();
     } catch (error) {
       console.log("Error in Logging out:", error.message);
       toast.error(error.message);
