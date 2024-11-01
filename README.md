@@ -12,7 +12,7 @@
 
 ## How to Start
 
-- After cloning the repository, open the folder in the terminal and run the following command
+- After `cloning` the repository, open the folder in the terminal and run the following command
 
 ```bash
 # this is for the backend
@@ -36,3 +36,8 @@ npm run dev
 
 - [pranulkbv28](https://github.com/pranulkbv28)
 - [Vaisnavi382](https://github.com/Vaisnavi382) 💖
+
+## Routes
+
+- [`frontend`](https://github.com/pranulkbv28/Blog-App/tree/main/frontend)
+- [`backend`](https://github.com/pranulkbv28/Blog-App/tree/main/backend)
