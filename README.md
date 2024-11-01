@@ -18,7 +18,7 @@
 # this is for the backend
 cd backend
 npm i
-# to start the server and initialise the connection to the db. The server is running on port 3000
+# to start the server and initialise the connection to the db. The server is running on port 8000
 npm run start
 
 # now, let's get the packages for the frontend and start that as well
