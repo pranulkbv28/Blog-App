@@ -37,7 +37,10 @@ function SignupPage() {
               placeholder="Enter your username"
               value={inputs.username}
               onChange={(e) =>
-                setInputs({ ...inputs, username: e.target.value })
+                setInputs({
+                  ...inputs,
+                  username: e.target.value,
+                })
               }
             />
           </div>
@@ -50,7 +53,10 @@ function SignupPage() {
               placeholder="Enter your password"
               value={inputs.password}
               onChange={(e) =>
-                setInputs({ ...inputs, password: e.target.value })
+                setInputs({
+                  ...inputs,
+                  password: e.target.value,
+                })
               }
             />
           </div>

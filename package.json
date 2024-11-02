@@ -1,0 +1,25 @@
+{
+    "name": "package-for-gloval-deps",
+    "version": "1.0.0",
+    "description": "This is a package file that contains global deps for the project",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "format": "prettier --write 'frontend/**/*.{js,jsx,ts,tsx}' 'backend/**/*.{js,jsx,ts,tsx}'"
+    },
+    "keywords": [
+        "global",
+        "fullstack",
+        "mern",
+        "backend",
+        "mongodb",
+        "frontend",
+        "react",
+        "express"
+    ],
+    "author": "pranulkbv28",
+    "license": "ISC",
+    "devDependencies": {
+        "prettier": "^3.3.3"
+    }
+}

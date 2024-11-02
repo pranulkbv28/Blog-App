@@ -12,6 +12,14 @@
 
 ## How to Start
 
+- There are some **global deps** that I have included in the `root directory`. To install them, run the following command while in the `root directory`
+
+```bash
+npm i
+# to format the entire codebase
+npm run format
+```
+
 - After `cloning` the repository, open the folder in the terminal and run the following command
 
 ```bash

@@ -41,7 +41,10 @@ function LoginPage() {
               placeholder="Enter your username"
               value={inputs.username}
               onChange={(e) =>
-                setInputs((prev) => ({ ...prev, username: e.target.value }))
+                setInputs((prev) => ({
+                  ...prev,
+                  username: e.target.value,
+                }))
               }
             />
           </div>
@@ -54,7 +57,10 @@ function LoginPage() {
               placeholder="Enter your password"
               value={inputs.password}
               onChange={(e) =>
-                setInputs((prev) => ({ ...prev, password: e.target.value }))
+                setInputs((prev) => ({
+                  ...prev,
+                  password: e.target.value,
+                }))
               }
             />
           </div>
