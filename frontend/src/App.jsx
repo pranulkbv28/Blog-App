@@ -14,6 +14,7 @@ function App() {
   return (
     <div>
       <Routes>
+        <Route path="/" element={<Navigate to="/app/home" />} />
         <Route path="/auth" element={<AuthLayout />}>
           <Route
             path="login"
