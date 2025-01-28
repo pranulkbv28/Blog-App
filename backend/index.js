@@ -26,10 +26,6 @@ app.use(cookieParser());
 app.use(cors(corsOptions));
 
 app.use("/api/v1/user", userRouter);
-// app.use("/api/v1/test", testRouter);
-// app.get("/ping", (req, res) => {
-//   res.status(200).send("pong");
-// });
 
 app.listen(PORT, async () => {
   await connectToDb();

@@ -37,7 +37,7 @@ npm run dev
 ```
 
 - Do add your own values in your `.env` file
-- You can follow the `.env-sample` for the samples
+- You can follow the [`env-sample`](./backend/env-sample) for the samples
 - Placement of the `.env` file should be in the `backend` directory
 
 ## Collaborators
