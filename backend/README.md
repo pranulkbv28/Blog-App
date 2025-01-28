@@ -2,11 +2,11 @@
 
 - This directory is the `backend` of the blog app.
 - The **backend** is being created with `ExpressJs` for the **server**, `NodeJs` for the **runtime** and `MongoDB` for the **database**.
-- We are using [`bcryptjs`](https://www.npmjs.com/package/bcryptjs) to hash the password.
+- We are using [`bcryptjs`](https://www.npmjs.com/package/bcryptjs) to **hash the password**.
 - We are using [`jsonwebtoken`](https://www.npmjs.com/package/jsonwebtoken) to manage the tokens for the **authentication**.
-- We are using [`cookieParser`](https://www.npmjs.com/package/cookie-parser) to manage the cookies.
-- We are using [`dotenv`](https://www.npmjs.com/package/dotenv) to manage the environment variables.
-- We are using [`cors`](https://www.npmjs.com/package/cors) to manage the cross-origin requests.
+- We are using [`cookieParser`](https://www.npmjs.com/package/cookie-parser) to **manage the cookies**.
+- We are using [`dotenv`](https://www.npmjs.com/package/dotenv) to **manage the environment variables**.
+- We are using [`cors`](https://www.npmjs.com/package/cors) to **manage the cross-origin requests**.
 
 ## APIs
 
